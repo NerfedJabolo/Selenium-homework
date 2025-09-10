@@ -1,0 +1,95 @@
+Selenium Automation Tasks - Test Plan
+=====================================
+
+1. Google Search Screenshot (task1.py)
+---------------------------------------
+Purpose:
+  Search for "Sten Kahu" on Google and save a screenshot.
+
+Test Steps:
+  1. Run task1.py
+  2. Wait for Google to load and accept cookies if prompted
+  3. Verify the search box is populated with "Sten Kahu"
+  4. Press Enter to search
+  5. Wait for results and take screenshot
+
+Expected Outcome:
+  - Screenshot saved as found.png containing search results
+
+Remarks:
+  - Browser should remain open if detach=True
+  - Use WebDriverWait for reliable results
+
+
+2. Quotes Scraper (task2.py)
+-----------------------------
+Purpose:
+  Scrape quotes and authors from the first page of quotes.toscrape.com
+
+Test Steps:
+  1. Run task2.py
+  2. Verify browser opens quotes page
+  3. Check that all quotes and authors are printed to console
+
+Expected Outcome:
+  - All quotes and authors from the first page are printed
+
+Remarks:
+  - Only first page is scraped; can be extended for pagination
+
+
+3. Add/Remove Elements (task3.py)
+---------------------------------
+Purpose:
+  Click "Add Element" multiple times and remove all elements
+
+Test Steps:
+  1. Run task3.py
+  2. Verify browser opens Add/Remove Elements page
+  3. Click "Add Element" 5 times
+  4. Confirm 5 "Delete" buttons appear
+  5. Click each "Delete" button
+
+Expected Outcome:
+  - All added elements are removed
+
+Remarks:
+  - Short delay after each click for visual confirmation
+
+
+4. Login Automation (task4.py)
+-------------------------------
+Purpose:
+  Automate login and print success/failure message
+
+Test Steps:
+  1. Run task4.py
+  2. Verify browser opens login page
+  3. Enter valid credentials (tomsmith / SuperSecretPassword!)
+  4. Click Login button
+  5. Wait for flash message
+
+Expected Outcome:
+  - Flash message printed to console: "You logged into a secure area!"
+
+Remarks:
+  - Can test invalid credentials to verify error handling
+
+
+5. Checkbox Automation (task5.py)
+---------------------------------
+Purpose:
+  Check all checkboxes on the Checkbox page
+
+Test Steps:
+  1. Run task5.py
+  2. Verify browser opens the-internet homepage
+  3. Navigate to "Checkboxes" page
+  4. Ensure all checkboxes are selected
+  5. Navigate back to homepage
+
+Expected Outcome:
+  - Both checkboxes are checked
+
+Remarks:
+  - Optional sleep added for visual verification
